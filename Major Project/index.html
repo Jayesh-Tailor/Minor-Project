@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCompass - Smart Career Guidance System</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- A. NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-compass"></i>
+                <span>CareerCompass</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#explore">Explore Careers</a>
+                <a href="#assessment">Skills Assessment</a>
+                <a href="#learning-paths">Learning Paths</a>
+                <a href="#resources">Resources</a>
+                <a href="#about">About</a>
+            </nav>
+            <div class="nav-auth">
+                <a href="#login" class="btn btn-secondary">Login</a>
+                <a href="#signup" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- B. HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>Discover Your Potential. <span class="gradient-text">Design Your Future.</span></h1>
+                    <p>An intelligent platform engineered to help you discover ideal career pathways, evaluate technical strengths, and follow structural roadmaps tailored entirely to your personal goals.</p>
+                    <div class="hero-actions">
+                        <a href="#explore" class="btn btn-primary btn-lg">Explore Careers</a>
+                        <a href="#assessment" class="btn btn-secondary btn-lg">Find Your Career Path</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-illustration">
+                        <div class="circle-bg"></div>
+                        <div class="floating-card metric-card"><i class="fa-solid fa-chart-line"></i> <span>Growth Analysis</span></div>
+                        <div class="floating-card path-card"><i class="fa-solid fa-route"></i> <span>4 Tailored Roadmaps</span></div>
+                        <i class="fa-solid fa-user-astronaut main-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- C. CAREER ASSESSMENT SECTION -->
+        <section id="assessment" class="assessment-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Discover Your Ideal Career</h2>
+                    <p class="helper-text">Fill out this profile summary to receive personalized path recommendations based on your preferences.</p>
+                </div>
+                <div class="assessment-card">
+                    <form action="#" method="GET" onsubmit="return false;">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="student-name">Full Name</label>
+                                <input type="text" id="student-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="education-level">Current Education Level</label>
+                                <select id="education-level" required>
+                                    <option value="" disabled selected>Select your current status</option>
+                                    <option value="high-school">High School</option>
+                                    <option value="undergraduate">Undergraduate Student</option>
+                                    <option value="postgraduate">Postgraduate Student</option>
+                                    <option value="professional">Working Professional</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="field-interest">Field of Core Interest</label>
+                                <select id="field-interest" required>
+                                    <option value="" disabled selected>Select core domain</option>
+                                    <option value="tech">Technology & Software</option>
+                                    <option value="design">Creative Arts & Design</option>
+                                    <option value="business">Management & Finance</option>
+                                    <option value="marketing">Marketing & Strategy</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fav-subjects">Favorite Academic Subjects</label>
+                                <input type="text" id="fav-subjects" placeholder="e.g., Mathematics, Computer Science, Graphics">
+                            </div>
+                        </div>
+
+                        <div class="form-group margin-top-md">
+                            <label>Current Skills (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="skills" value="coding"> Logical Reasoning
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="skills" value="design"> Visual Styling
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="skills" value="writing"> Technical Copywriting
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="skills" value="analytics"> Statistical Assessment
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-grid margin-top-md">
+                            <div class="form-group">
+                                <label>Preferred Work Style</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="work-style" value="remote" checked> Remote Work
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="work-style" value="office"> On-site Office
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="work-style" value="hybrid"> Hybrid Split
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="career-goals">Primary Long-term Goal</label>
+                                <input type="text" id="career-goals" placeholder="e.g., Launching a startup, Enterprise R&D">
+                            </div>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-primary btn-lg">Get Career Recommendations</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- D. POPULAR CAREER PATHS -->
+        <section id="explore" class="careers-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Popular Career Paths</h2>
+                    <p>Explore the most sought-after domains in modern technology, software, and creative business infrastructure.</p>
+                </div>
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <div class="career-card">
+                        <span class="category-tag tag-tech">Technology</span>
+                        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Software Developer</h3>
+                        <p>Architects, designs, and builds scalable digital systems, websites, and application frameworks.</p>
+                        <div class="skills-tags">
+                            <span>Java</span><span>Python</span><span>React</span><span>SQL</span>
+                        </div>
+                        <a href="#learning-paths" class="card-link">Explore Career <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="career-card">
+                        <span class="category-tag tag-data">Analytics</span>
+                        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Data Scientist</h3>
